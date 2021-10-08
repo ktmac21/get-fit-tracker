@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
-const {exerciseSchema} = require('./Exercise');
+const exerciseSchema = require('./Exercise.js');
+
 
 const WorkoutSchema = new Schema(
     {
@@ -9,10 +10,7 @@ const WorkoutSchema = new Schema(
         },
         
         exercises: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: "Exercise"
-            }
+           exerciseSchema
         ]
     });
 

@@ -12,6 +12,16 @@ const exerciseSchema = new Schema({
         type: Number,
     },
     
+    weight: {
+        
+        type: Number,
+    },
+
+    distance: {
+        type: Number,
+    },
+
+    
     reps: {
         type: Number,
     },
@@ -20,6 +30,6 @@ const exerciseSchema = new Schema({
     },
 });
 
-const Exercise = model("Exercise", exerciseSchema);
 
-module.exports = Exercise;
+
+module.exports = exerciseSchema;
