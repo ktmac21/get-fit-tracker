@@ -1,7 +1,8 @@
 const { connect, connection } = require('mongoose');
 
 connect(
-  process.env.MONGO_UI || 'mongodb://localhost/workout', {
+  process.env.MONGODB_URI || 'mongodb://localhost/workout', 
+{
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
