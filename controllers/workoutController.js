@@ -11,9 +11,7 @@ module.exports = {
      }
    }])
 
-      .then((workouts) => {
-        console.log(workouts)
-        res.json(workouts)})
+      .then((workouts) => res.json(workouts))
       .catch((err) => res.status(500).json(err))
     
     },
@@ -60,9 +58,7 @@ module.exports = {
   ])  
       .sort( { day: -1 } )
       .limit( 7 )
-      .then((workouts) => {
-        console.log(workouts);
-        res.json(workouts)})
+      .then((workouts) => res.json(workouts))
       .catch((err) => res.status(500).json(err))
   }
 }
