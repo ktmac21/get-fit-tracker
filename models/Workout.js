@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const exerciseSchema = require('./Exercise.js');
+const exerciseSchema = require('./Exercise');
 
 
 const WorkoutSchema = new Schema(
@@ -9,35 +9,7 @@ const WorkoutSchema = new Schema(
             default: Date.now
         },
         
-        exercises: [
-            type:  {
-                type: String,
-            },
-        
-            name: {
-                type: String,
-            },
-            duration: {
-                type: Number,
-            },
-            
-            weight: {
-                
-                type: Number,
-            },
-        
-            distance: {
-                type: Number,
-            },
-        
-            
-            reps: {
-                type: Number,
-            },
-            sets: {
-                type: Number,
-            },
-        ]
+        exercises: [exerciseSchema]
     });
 
 
