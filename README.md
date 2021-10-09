@@ -13,9 +13,12 @@
 
 ## Description
 
-In this week's homework I was given the front-end code and had to complete the back-end code using MongoDB and Mongoose. I created the models and schemas, made API calls and deployed it using Mongo Atlas and Heroku.
+In this week's homework I was given the front-end code and had to complete the back-end code using MongoDB and Mongoose. I created the models and schemas, made API calls and deployed it using MongoDB Atlas and Heroku.
 
 ## Screenshot
+
+https://user-images.githubusercontent.com/83046421/136664104-5aebd24a-0d98-4e0f-ad7f-0b5c8c15a8dd.mp4
+
 
 ## Deployment
 
