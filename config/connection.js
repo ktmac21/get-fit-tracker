@@ -1,3 +1,6 @@
+const dotenv = require("dotenv")
+dotenv.config()
+
 const { connect, connection } = require('mongoose');
 
 connect(process.env.MONGODB_URI || 'mongodb://localhost/workout',
