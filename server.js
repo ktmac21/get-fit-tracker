@@ -14,7 +14,7 @@ app.use("/exercise", express.static('public/exercise.html'));
 app.use("/stats", express.static('public/stats.html'));
 app.use(routes);
 
-db.once('open', () => {
+db.once("open", () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
   });
